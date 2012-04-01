@@ -21,10 +21,11 @@ import Network.AMQP (
 
 import qualified Data.ByteString.Lazy.Char8 as B
 
+type Log       = MVar String
+type Logger    = String -> IO ()
 type QueueName = String
-type Log = MVar String
-type Logger = String -> IO ()
 
+-- | The names of the queues to subscribe to
 queueNames :: [QueueName]
 queueNames = ["warning", "info", "error"]
 
