@@ -1,0 +1,7 @@
+Running:
+
+  runghc RabbitTrail.hs RABBITMQ_IP_ADDRESS VIRTUAL_HOST USER_NAME PASSWORD
+
+Bugs:
+
+  Doesn't handle Ctrl-C very gracefully.
